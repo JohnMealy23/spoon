@@ -1,0 +1,6 @@
+const adjustableTrue = (probability) => {
+	if (x < 100) {
+        return true
+    }
+    else return false
+}
