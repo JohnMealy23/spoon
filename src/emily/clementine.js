@@ -1,16 +1,18 @@
-console.log("newborn clementine")
+console.log("toddler clementine")
 
 const adjustableTrue = (probability) => {
     const randomNumber = Math.random() * 100;
     console.log(randomNumber)
-    if (randomNumber <= (100 - probability)) {
-       return false
+    if (randomNumber <= probability) {
+       return true
     }
     else {
-       return true
+       return false
     }
  }
  
+
+
  const percentTrue = 30
  const results = { trues: 0, falses: 0 }
  for (let i = 0; i < 100; i++) {
