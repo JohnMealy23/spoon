@@ -27,14 +27,3 @@ for (let i = 0; i < 100; i++) {
 }
 
 console.log({ results })
-
-const myLabel = document.
-
-myLabel.innerText = "Hello Friends!"
-
-
-const myCallback = () => {
-    document.body.appendChild(myLabel)
-}
-
-setInterval(myCallback, 2000)
