@@ -1,110 +1,109 @@
-/*
-setInterval(() => {
-   const element = document.createElement('div')
-   element.innerText = 'Hi Mike! '
-   document.body.appendChild(element)
-}, 5000)
-*/
+//
+//const array1 = [
+//    'Mike'
+//    'Emily'
+//    'Sara'
+//]
+//
+//const makeHello = (x) => {
+//    console.log('Hello ${x}!')
+//}
+//
+//array1.forEach(makeHello)
 
-/*var myInput = document.createElement("Input");               // Create a <p> element
-para.innerText = "This is my text";                      // Insert text
-document.body.appendChild(Input);                      // Append <p> to <body>
-
-
-/*
-var myInput = document.createElement("input");
-
-var myButton = document.createElement('BUTTON');
-myButton.innerText = "Click on this"
-*/
-
-
-/*
-   var x = document.createElement("INPUT");
-   x.type = "number"
-   x.value = "12345"
-   document.body.appendChild(x);
-myFunction()
-*/
-/*
-var myInput = document.createElement('input');
-myInput.type = "text"
-myInput.value = "Hello World!"
-document.body.appendChild(myInput)
-
-var myButton = document.createElement('button');
-myButton.innerText = 'Click Here!'
-myButton.addEventListener('click', yellIt);
-document.body.appendChild(myButton)
-
-function yellIt() {
-   const userInput = myInput.value
-   alert(userInput)
+const countDown = (remaining) => {
+    console.log(`${remaining} left to go!`)
+    if (remaining !== 0) {
+        remaining = remaining - 1
+        countDown(remaining)
+    }
 }
+countDown(50)
+
+/*
+countdown = remaining
+remaining = starting with ten, 
+any number greater than 0 will have 1 subtracted from it
 */
 
-const foodArray = [
-    {
-        food: 'hamburger',
-        acceptableCondiments: [
-            'mayo',
-            'mustard',
-            'relish',
-            'cheese',
-        ],
-    },
-    {
-        food: 'baked potato',
-        acceptableCondiments: [
-            'butter',
-            'sour cream',
-            'cheese',
-            'chives',
-        ],
-    },
-    {
-        food: 'tacos',
-        acceptableCondiments: [
-            'salsa',
-            'sour cream',
-            'cheese',
-            'gauc',
-        ],
-    },
-    {
-        food: 'condiment soup',
-        acceptableCondiments: [
-            'mayo',
-            'mustard',
-            'relish',
-            'butter',
-            'chives',
-            'salsa',
-            'sour cream',
-            'cheese',
-            'gauc',
-        ],
-    },
-]
 
-//const justTheFood = foodArray.map(menuItem => menuItem.food);
-//console.log(justTheFood);
+//const declares getRandomBoolean always
+//equals Math.random function
+//equals 50%
 
-const foodFilter = (foodItem) => {
-    const hasSourCream = foodItem.acceptableCondiments.includes('sour cream')
-    console.log('hasSourCream', hasSourCream)
-    return hasSourCream
+const getRandomBoolean = (probability) => {
+    const randomNumber = Math.random()
+    const spoonCat = randomNumber >= probability;
+    return spoonCat
+}
+const result1 = getRandomBoolean(.60)
+const result2 = getRandomBoolean(.15)
+console.log(result1, result2);
+
+//passes function of getRandomBoolean
+
+console.log(getRandomBoolean);
+
+
+
+//const getRandomBoolean = () => {
+//    const x = Math.random() >= 0.5;
+//    return x
+//}
+
+//console.log(getRandomBoolean())
+//console.log(getRandomBoolean())
+//console.log(getRandomBoolean())
+//console.log(getRandomBoolean())
+//console.log(getRandomBoolean())
+//console.log(getRandomBoolean())
+//console.log(getRandomBoolean())
+//console.log(getRandomBoolean())
+//console.log(getRandomBoolean())
+
+
+
+//const getRandomBoolean = (thisnumber) => {
+//    if (thisnumber % 2 === 0) {
+//        return false;
+//    } else {
+//        return true;
+//    }
+//}
+//const trueorfalse1 = getRandomBoolean(2)
+//const trueorfalse2 = getRandomBoolean(2)
+//const trueorfalse3 = getRandomBoolean(2)
+//const trueorfalse4 = getRandomBoolean(2)
+//console.log({
+//trueorfalse1,
+//trueorfalse2,
+//trueorfalse3,
+//trueorfalse4,
+//})
+
+
+
+const adjustableTrue = (probability) => {
+        if (results < 30) {
+        return false;
+    } else {
+        return true;
+    }
 }
 
+console.log(probability)
 
-
-/*
-const condimentFind = (acceptableCondiment) => {
-    return "sour cream"
+// What follows is a unit test.  Don't touch anything below this line!
+// It'll run your function 100 times, and you can check if the number of
+// trues is as intended - around ~30% of the whole, in this case.
+const percentTrue = 30
+const results = { trues: 0, falses: 0 }
+for (let i = 0; i < 100; i++) {
+    const result = adjustableTrue(percentTrue)
+    if (result === true) {
+        results.trues++
+    } else if (result === false) {
+        results.falses++
+    }
 }
-const foodFilter = (menuItem) => {
-    return menuItem.acceptableCondiments.includes("sour cream");
-}
-const weOnlyHaveSourCream = foodArray.filter(foodFilter);
-console.log(weOnlyHaveSourCream);
-*/
+console.log({ results })
