@@ -42,9 +42,13 @@ const foodArray = [
     },
 ]
 
-const foodFilter = (foodItem) => {
-    const hasSourCream = foodItem.acceptableCondiments.includes('sour cream')
-    console.log('hasasdfsdfawSourCream', hasSourCream)
+
+const sourCreamFinider = (condiment) => {
+    return condiment === 'sour cream'
+}
+
+const foodFilter = (menuItem) => {
+    const hasSourCream = menuItem.acceptableCondiments.find(sourCreamFinider)
     return hasSourCream
 }
 
