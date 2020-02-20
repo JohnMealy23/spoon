@@ -28,7 +28,7 @@ for (let i = 0; i < 100; i++) {
 
 console.log({ results })
 
-const myLabel = document.
+const myLabel = document.createElement('div')
 
 myLabel.innerText = "Hello Friends!"
 
