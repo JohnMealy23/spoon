@@ -1,15 +1,11 @@
+import { model } from '../choose-yo-own/model.json'
+
 const jokes = require('give-me-a-joke')
-
-
 const callback = (joke) => {
     console.log(joke)
 }
-// jokes.getRandomDadJoke(callback)
+jokes.getRandomDadJoke(callback)
 jokes.getCustomJoke('Mike', 'Fagerness', callback)
-
-
-
-
 
 
 // const myCallback = () => {
