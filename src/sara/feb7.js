@@ -1,0 +1,1 @@
+var condiments = ["mustard", "mayo", "ketchup", "tears"]
