@@ -28,3 +28,5 @@ const frames = [
         ]
     }
 ]
+
+module.exports = frames
