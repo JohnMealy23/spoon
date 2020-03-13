@@ -42,7 +42,6 @@ const foodArray = [
     },
 ]
 
-
 const sourCreamFinider = (condiment) => {
     return condiment === 'sour cream'
 }

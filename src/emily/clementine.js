@@ -119,7 +119,7 @@ const justTheFood = foodArray.map((menuItem) => {
 });
 
 // const callback = (acc, item) => {
-//     const foodName = item.food 
+//     const foodName = item.food
 //     acc.push(foodName)
 //     return acc
 // }
@@ -133,11 +133,11 @@ const justTheFood = foodArray.map((menuItem) => {
 //     //okay I know this doesn't work, but my thinking is to somehow put each element of the foodsforh2tags array into a separate h2 tag
 
 //     const callback = (acc, item) => {
-//         const condimentsName = item.acceptableCondiments 
+//         const condimentsName = item.acceptableCondiments
 //         acc.push(condimentsName)
 //         return acc
 //     }
-    
+
 //     const unorganizedList = []
 //     const result = foodArray.reduce(callback, unorganizedList)
 //     console.log(result)
@@ -148,7 +148,7 @@ const justTheFood = foodArray.map((menuItem) => {
 
 
 // const callback = (acc, item) => {
-//     const foodName = item.food 
+//     const foodName = item.food
 //     acc.push(foodName)
 //     return acc
 // }
@@ -187,8 +187,8 @@ const justTheFood = foodArray.map((menuItem) => {
 //     const remainder = item % 2
 //     if (remainder === 1){
 //         acc.push(item)
-//     } 
-//     return acc 
+//     }
+//     return acc
 // }
 
 // const array2 = []
