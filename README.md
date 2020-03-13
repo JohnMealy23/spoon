@@ -20,3 +20,10 @@ Type the following into your command line:
 ```
 npm run start
 ```
+
+### Stop server
+
+Type the following into your command line:
+```
+control + c
+```
