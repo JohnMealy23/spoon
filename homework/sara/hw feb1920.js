@@ -42,41 +42,16 @@ const foodArray = [
     },
 ]
 
-//const callback = (stank) => {
-//    return stank.food
-//}
-
-//const justTheFood = foodArray.map(callback)
-//console.log(justTheFood)
-
-const gork = (condiment) => {
-    if (condiment === 'sour cream') {
-        return true
-    }
-    else {
-        return false
-    }
-}
-
-const containsSourCream = (foodItem) => {
-    const foodItemCondiments = foodItem.acceptableCondiments
-    const hasSourCream = foodItemCondiments.some(gork)
-    return hasSourCream
-}
-
-const weOnlyHaveSourCream = foodArray.filter(containsSourCream)
-console.log(JSON.stringify(weOnlyHaveSourCream, null, 4))
-
-//document.getElementById(foodItem).textContent = 'list';
-
 var strs = [ 'hamburger', 'baked potato', 'tacos', 'condiment soup' ];
-var list = document.createElement('h2');
+var list = document.createElement('food');
 for (var i in strs) {
-  var anchor = document.createElement('li');
+  var anchor = document.createElement(acceptableCondiments);
   anchor.href = "#";
   anchor.innerText = strs[i];
 
-  var elem = document.createElement('ul');
+  var elem = document.createElement("list");
   elem.appendChild(anchor);
   list.appendChild(elem);
 }
+
+//document.getElementById("hamburger").textContent = 'new text';
