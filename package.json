@@ -18,11 +18,6 @@
   },
   "homepage": "https://github.com/JohnMealy23/spoon#readme",
   "dependencies": {
-    "express": "^4.17.1",
-<<<<<<< HEAD
-    "trivia": "^1.0.0"
-=======
-    "give-me-a-joke": "^0.1.2"
->>>>>>> ec3b17f81fdc2f1bc9c9fbb489ebe49dfa74eab7
+    "express": "^4.17.1"
   }
 }
