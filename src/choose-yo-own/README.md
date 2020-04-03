@@ -10,4 +10,5 @@ This is the game we make while the world falls to pieces.
 
 
 ## Ideas
+grocery shopping for the quarantine. All the canned goods and cleaning supplies are out. 
 
