@@ -1,4 +1,4 @@
-const frames = [
+export const model = [
     {
         id: 0,
         expostion: 'You wake up in the morning',
